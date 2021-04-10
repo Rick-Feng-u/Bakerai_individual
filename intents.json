@@ -1,0 +1,107 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "hey"],
+         "responses": ["Hello! :)", "Happy to speak with you! :)", "Hi there, how can I help? :)","What can I help you with? :)","What can I do for you today? :)"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day","Bye","Thank you, bye"],
+         "responses": ["Thank you for using Bakerai <3","Have a sweet day! <3", "Bye~", "Goodbye! <3","Have a good day!", "Thanks for coming <3", "Have a good one!"],
+         "context_set": ""
+        },
+        {"tag": "about",
+         "patterns": ["Tell me about yourself", "What is Bakerai", "Who are you", "I'm confused", "what do you do", "what is your role", "how can you help me", "info", "what can you do","what is your name", "what should I call you", "whats your name?" ],
+         "responses": ["I am a virtual assistant for the Bakery - Sakura", "I can tell you everything about Sakura"],
+         "context_set": ""
+        },
+        {"tag": "shop",
+         "patterns": ["Id like to buy something", "whats on the menu", "could i get something to eat","What baked goods do you have","What do you offer","what baked goods are offered"],
+         "responses": ["Here's our menu: \n Cookies: $2 \n Cupcakes: $4 \n Coffee: $3 \n Cake: Varying prices \n Bread: 3$ White, Wholewheat, Sour dough \n We also offer customize cake for special events!"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
+         "responses": ["We are open 7am-4pm Monday-Friday! Closed on all holidays."],
+         "context_set": ""
+        },
+        {"tag": "cookies",
+         "patterns": ["what cookies do you have", "Do you have chocolate chip cookies", "Do you have raisin cookies","Can I have a cookie","how much does cookies cost","I want cookies","Do you still have cookies"],
+         "responses": ["We have chocolate chip cookies and oatmeal raisin cookies, both are $2 each!"],
+         "context_set": ""
+        },
+        {"tag": "cupcakes",
+         "patterns": ["what cupcakes do you have", "Do you have chocolate cupcakes", "Do you have vanilla cupcakes","Can I have a cupcake","how much does cupcakes cost","I want cupcakes","Do you still have cupcakes"],
+         "responses": ["We have chocolate cupcakes and vanilla cupcakes, both are $4 each! $4.5 for both strawberry cupcakes and Matcha cupcakes :)"],
+         "context_set": ""
+        },
+        {"tag": "drink",
+         "patterns": ["what drinks do you have", "Do you have anything to drink", "Do you have coffee","Can I have a cup of coffee with it","how much does coffee cost","I want coffee","I want something to drink","Do you still have coffee", "how about drinks"],
+         "responses": ["We offer coffee and bubble tea with our baked goods, its $3 a cup for coffee and $5 a cup for bubble tea!"],
+         "context_set": ""
+        },
+        {"tag": "bubbletea",
+         "patterns": ["what kind of bubble tea do you have?", "Do you have bubble tea?", "Do you have milk tea","Can I have a bubble tea with it","how much does bubble tea cost","I want bubble tea","Do you still have bubble tea","bubbletea","bubbleteas"],
+         "responses": ["Bubble tea is $5 a cup, we have strawberry and mango flavours!"],
+         "context_set": ""
+        },
+        {"tag": "icecream",
+         "patterns": ["Do you have any ice cream", "Do you have ice cream","Can I have an ice cream with it?","how much does ice cream cost","I want ice cream","I want some ice cream","Do you still have ice cream", "how about ice cream","icecream"],
+         "responses": ["We offer chocolate and vanilla ice cream, they are $4 each!"],
+         "context_set": ""
+        },
+        {"tag": "location",
+         "patterns": ["where is Sakura", "how can I get to Sakura", "What is the address for Sakura", "where are you", "where is the shop"],
+         "responses": ["We are at 221B Baker Street accross Lake Regional Park :)"],
+         "context_set": ""
+        },
+        {"tag": "customize",
+         "patterns": ["Can I customize a cake", "Can I order a wedding cake", "how much would a customized cake cost","I want to customize a cake","I want a wedding case","I need a customized cake","how do I customize cakes"],
+         "responses": ["We offer cake customization, come to our shop at 221B Baker Street to discuss the details with our cake designers!"],
+         "context_set": ""
+        },
+        {"tag": "allergy",
+         "patterns": ["Does the baked goods contain peanuts", "I am allergic to peanuts","make sure nothing contains peanut, I am allergic","I am allergic to diary products","Does anything contain diary? I am lactose intolerant", "i am allergic"],
+         "responses": ["None of our product contain any nuts, yet all of our product contain or was made with products that contain diary products."],
+         "context_set": ""
+        },
+        {"tag": "gluten",
+         "patterns": ["Does the baked goods contain gluten", "I am allergic to gluten","make sure nothing contains gluten, I am allergic","I cannot eat gluten","Does anything contain gluten"," I am on a gluten free diet"],
+         "responses": ["Most of our products contain gluten, but we do offer gluten free chocolate chip cookies"],
+         "context_set": ""
+        },
+        {"tag": "joke",
+         "patterns": ["Tell me a joke", "I'm bored","I'm waiting for my order and I'm really bored","tell me a joke while I'm waiting","say something funny"],
+         "responses": ["I'm trying very hard to come up with a baking pun but we don't offer buns :(","one joke is all you knead XD"],
+         "context_set": ""
+        },
+        {"tag": "history",
+        "patterns": ["How long have you been in operation?", "When did you start?", "How old is the bakery?"],
+        "responses": ["Our founder is secret. We have been open since 2015.", "We opened in 2015, thanks to our secret founder."],
+        "context": ""
+        },
+        {"tag": "creator",
+        "patterns": ["Who made you?", "Who created you?", "Who made BakerAI?"],
+        "responses": ["I was made for a cosc 310 Project", "Elias, Lydia, Novia, Rick and Kanishka made me"],
+        "context": ""
+        },
+        {"tag": "cake",
+        "patterns": ["Can I have some cake","what cake do you have", "Do you have chocolate cake", "I want cake","Can I have a cake","how much does cake cost","What cakes do you sell","Do you still have cake"],
+        "responses": ["We have cake, mostly ranging in price from 20-30$. For more information, visit our website BakeSakura.com"],
+        "context_set": ""
+        },
+        {"tag": "catering",
+        "patterns": ["Do you do catering?", "I want something custom", "Can you make me something special?","I want something special","Can you customize for me?"],
+        "responses": ["We do customized catering. For more information, visit our website BakeSakura.com"],
+        "context_set": ""
+        },
+        {"tag": "bread",
+        "patterns": ["Can I have some bread","what bread do you have", "Do you have bread", "I want bread","Can I have bread","how much does bread cost","What bread do you sell","Do you still have bread"],
+        "responses": ["We have lots of bread, such as white, wholewheat, or sourdough bread. For more information, visit our website BakeSakura.com"],
+        "context_set": ""
+        }
+       
+     
+
+
+]
+}

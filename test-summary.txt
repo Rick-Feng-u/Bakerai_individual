@@ -1,0 +1,8 @@
+3 Primary unit tests were designed in unit-testing.py. They test the 3 main functionalities of our AI itself:
+
+Sentiment analysis: (Detecting negative sentences as negative). Done with testIntent().
+Default responses: (Correctly understanding when the bot has no valid response). Done with testDefault()
+General responses: (Matching a typical input to what should be it's correct output). Done with testResponses()
+
+Our testing frameworks do this by going through a different range for each function of predetermined test cases, and ensuring that the given output matches what an expected output is for that test cases.
+When a test case is failed, an exception is thrown and handled. Each function produces a summary after running the test cases.
