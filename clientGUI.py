@@ -1,6 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 import main as m
+from translate import languageDeteaction, translateThis, translateTo
 
 FONT = ("Verdana",12)
 TITLE_FONT = ("Verdana",16)
@@ -52,13 +53,23 @@ class bakerClient(tk.Tk):
     def getResponse(self):
         # Get user message
         userMessage = self.userInput.get()
+        # language detection 
+        user_lang = languageDeteaction(userMessage)
+        if(user_lang != 'en'):
+            userMessage = translateThis(userMessage)
         # Ignore empty messages
         if userMessage == "":
             return
         # Clear the user input
         self.userInput.delete(0, "end")
         # Get our reply
-        reply = "BakerAI: " + m.getFinalOutput(self.loaded_clf,userMessage) + "\n"
+        raw_reply = m.getFinalOutput(self.loaded_clf,userMessage)
+        reply = ""
+        if():
+            translated = translateTo(raw_reply, user_lang)
+            reply = "BakerAI: " + translated + "\n"
+        else:
+            reply = "BakerAI: " + raw_reply + "\n"
         # Send reply to client
         storedUserMessage = "You: " + userMessage + "\n"
         self.outputBox.configure(state="normal")

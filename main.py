@@ -19,16 +19,30 @@ NEGATIVE_RESPONSES = ["You seem unhappy. I am sorry :("]
 
 def start():
     loaded_clf = load_sentiment_analysis()[0]
+    print("language?")
+    user_lag = input()
+    target_lang = languageDeteaction(user_lag)
     print("\n\n\n\n\n")
     print("Hello! This is the chatbot. I am here to tell you about the bakery Sakura! (type 'quit' to quit.) Let's chat:", flush = True)
     while True:
-        reading = input()
-        if reading.strip().lower() == "quit":
-            break
+        if(targer_lang != 'en'):
+            user_input = input()
+            reading = translateThis(user_input)
+            if reading.strip().lower() == "quit":
+                break
 
-        # print a response.
-        print(f'bot: {getFinalOutput(loaded_clf,reading)}')
-        print(" ")
+            # print a response.
+            print(f'bot: {translateTo(getFinalOutput(loaded_clf,reading), target_lang)}')
+            print(" ")
+        else:
+            reading = input()
+            if reading.strip().lower() == "quit":
+                break
+
+            # print a response.
+            print(f'bot: {translateTo(getFinalOutput(loaded_clf,reading), target_lang)}')
+            print(" ")
+        
 
 def getFinalOutput(loaded_clf, reading):
     output = model.predict([convert_input_to_bow(reading, allWords )])
