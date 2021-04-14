@@ -6,6 +6,7 @@ from process_data import  allWords, convoLabels, data
 from NN import convert_input_to_bow
 from NN import model
 import clientGUI as c
+from flickr import show_image
 # these are the model and function for chatting
 # from process_data import ..... (you can load functions, varibles....)
 
@@ -14,6 +15,7 @@ import clientGUI as c
 #terminate the loop after the user inputs a reserved value of your choosing
 DEFAULT_RESPONSES = ["What are you talking about? I don't get it", "Sorry, I can't seem to understand... :(", "Sorry, I am not smart enough to understand... visit our website BakeSakura.com for more information","uhhh... I am not going to pretend I understand","Sorry, can you rephrase your question please, I can't understand."]
 NEGATIVE_RESPONSES = ["You seem unhappy. I am sorry :("]
+target_tag = ""
 
 #start chat - 'quit' to quit.
 
@@ -73,15 +75,18 @@ def input_to_bow_sentiment(words):
 def output_depending_on_sentiment(sentiment,output):
     if sentiment[0][0] > 0.65:
         return NEGATIVE_RESPONSES
+        target_tag = cor_label
 
     else:
         if numpy.amax(output) > 0.85:
             output_i = numpy.argmax(output)
             cor_label = convoLabels[output_i]
+            target_tag = cor_label
 
             for label in data['intents']:
                 if label['tag'] == cor_label:
                     cor_responses = label['responses']
+                    show_image(str(cor_label))
             return cor_responses
 
         else:
