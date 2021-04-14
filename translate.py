@@ -1,6 +1,7 @@
 import os
 from google.cloud import translate_v2 as translate
 
+# this access key nned to be replace with current tester's access key, due to Google policy, uploading access key is forbidden
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"C:\Users\rickf\Github repo\Bakerai_individual\chatbot-310623-b5d2e50b3b60.json"
 
 def languageDeteaction (input):
