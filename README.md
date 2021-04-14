@@ -3,7 +3,7 @@
 ## Bakerai is an online chatbot for a imaginary bakery - SAKURA. Bakerai acts as your online assistant to provide customer information they need about SAKURA without leaving the comfort of their home.
 
 ## Features implemented in Individual Project
-* ###   GUI
+* ###   Google translate
     Rick Feng, implemented a tanslation for all non English user input and provide translated answer for user:
     * Step 1: enable google credential to establish a connection from the bot to my server
     * Step 2: create languageDeteaction method for identifying non English input
@@ -18,6 +18,24 @@
     ## Conversation snippet?
     Below is a conversation snippet:
     ![img-1](./image/translate.jpg)
+    
+    
+* ###   Flickr API
+    Rick Feng, implemented display the image of the product from Flickr in case the user does not know what the product looks like:
+    * Step 1: enable Flickr API using keys for when bot is doing image search, it has the correct credentials
+    * Step 2: take the pattern of the question in(for example user input question related to cake) and search a image that is related to the pattern
+    * Step 3: take the retuen JSON file and trun it into dictionary for better manipulation
+    * Step 4: generate the coorect URL for a randomly selected image from the JSON file that got reture back fomr Flickr server
+    * Step 5: display the image/photo of the product in browser
+  
+  
+    ## How did this feature improve the project?
+    Sometime cunstomer has liitle to no understanding of what is product is and has no idea how they look like. This feature solve this issue since ever time user input a question, the bot is display a image related to the question in the browser. This can be expended in the future if the bakery has more items on the menu.
+    
+    ## Conversation snippet?
+    Below is a conversation snippet:
+    ![cake](./image/cake.jpg)
+    ![cookie](./image/cookie.jpg)
 
 ## previous implementation
 * ###   GUI
