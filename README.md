@@ -10,6 +10,8 @@
     * Step 3: create translateThis method to translate user input from target language into English so the bot can process and predict
     * Step 4: create translateTo method to translate the prdicted answer back to target language for user to view
     * Step 5: implentment all method and embedded them into the chatbot GUI
+    
+    Attention!!! Uploading access key for google cloud is forbidden, Individual who wish to use this chatbot need their own google cloud that has Cloud Translation API enabled and correct access key.
   
   
     ## How did this feature improve the project?
