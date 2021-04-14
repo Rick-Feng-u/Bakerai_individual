@@ -50,6 +50,8 @@ def getFinalOutput(loaded_clf, reading):
 
     #get the sentiment of user input
     sent_out = loaded_clf.predict_proba(input_to_bow_sentiment(reading))
+    print(sent_out)
+    print(output)
 
     #Random response
     return random.choice(output_depending_on_sentiment(sent_out,output))

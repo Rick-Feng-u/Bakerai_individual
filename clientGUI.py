@@ -2,6 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import main as m
 from translate import languageDeteaction, translateThis, translateTo
+from flickr import show_image
 
 FONT = ("Verdana",12)
 TITLE_FONT = ("Verdana",16)
