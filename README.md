@@ -127,6 +127,8 @@ This means the project is running and you can simply type the questions you have
 
 bakerai has the following file structure:
 
+ ---translate.py
+ ---flickr.py
  ---process_data.py  
  ---NN.py  
  ---main.py     
@@ -174,6 +176,14 @@ Client GUI is the class template for a client object. While it's only 1 window a
 ### `sentiment_analysis.py `
 
 This file handles the attitude of the user input if the sentiment analysis model recognize it. The training data is cleaned using Pandas and then subset the data to only information is needed which was the reviewText and the rating. The model is trained, and it assignes each review a positive, negative rating depending on the rating. When user input is very likly to be negative, the bot will apologizes to the user.
+
+### `translate.py `
+
+This file handles any translation feature that the chatbot has. languageDeteaction method for identifying non English input. translateThis method to translate user input from target language into English so the bot can process and predict. translateTo method to translate the prdicted answer back to target language for user to view.
+
+### `flickr.py `
+
+This file handles any photos/images that will be displayed in broswer when user input a question to chatbot. Take the pattern of the question in(for example user input question related to cake) and search a image that is related to the pattern. Take the retuen JSON file and trun it into dictionary for better manipulation. Generate the coorect URL for a randomly selected image from the JSON file that got reture back fomr Flickr server and display the image/photo of the product in browser.
 
 ## Functions
 
@@ -245,6 +255,9 @@ Potential allergies?
 - ask about customize cake
 - ask to buy a cupcake for taste test haha
 - Ask to tell a joke
+- cookie in japanese: クッキー
+- bubble tea in spanish: Té de burbujas
+- cake in chinese: 蛋糕
 
 ## Limitation
 
