@@ -2,7 +2,7 @@
 
 ## Bakerai is an online chatbot for a imaginary bakery - SAKURA. Bakerai acts as your online assistant to provide customer information they need about SAKURA without leaving the comfort of their home.
 
-## Features implemented in Individual Project:
+## Features implemented in Individual Project
 * ###      Google cloud translate
        Rick Feng, implemented a tanslation for all non English user input and provide translated answer for user:
        * Step 1: enable google credential to establish a connection from the bot to my server
