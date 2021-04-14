@@ -3,13 +3,13 @@
 ## Bakerai is an online chatbot for a imaginary bakery - SAKURA. Bakerai acts as your online assistant to provide customer information they need about SAKURA without leaving the comfort of their home.
 
 ## Features implemented in Individual Project
-* ###      Google cloud translate
-       Rick Feng, implemented a tanslation for all non English user input and provide translated answer for user:
-       * Step 1: enable google credential to establish a connection from the bot to my server
-       * Step 2: create languageDeteaction method for identifying non English input
-       * Step 3: create translateThis method to translate user input from target language into English so the bot can process and predict
-       * Step 4: create translateTo method to translate the prdicted answer back to target language for user to view
-       * Step 5: implentment all method and embedded them into the chatbot GUI
+* ###   GUI
+    Rick Feng, implemented a tanslation for all non English user input and provide translated answer for user:
+    * Step 1: enable google credential to establish a connection from the bot to my server
+    * Step 2: create languageDeteaction method for identifying non English input
+    * Step 3: create translateThis method to translate user input from target language into English so the bot can process and predict
+    * Step 4: create translateTo method to translate the prdicted answer back to target language for user to view
+    * Step 5: implentment all method and embedded them into the chatbot GUI
   
   
     ## How did this feature improve the project?
