@@ -2,7 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import main as m
 from translate import languageDeteaction, translateThis, translateTo
-from flickr import show_image
+from main import target_tag
 
 FONT = ("Verdana",12)
 TITLE_FONT = ("Verdana",16)
@@ -49,6 +49,7 @@ class bakerClient(tk.Tk):
         self.userInput.grid(row=5, column=1, columnspan=4, sticky="EW")
         sendButton = tk.Button(mainFrame, text="Send message", command=lambda: self.getResponse())
         sendButton.grid(row=5, column=6, columnspan=1, sticky="EW")
+        print(target_tag) 
         self.userInput.bind("<Return>", lambda x: self.getResponse())
 
     def getResponse(self):
@@ -75,7 +76,7 @@ class bakerClient(tk.Tk):
         storedUserMessage = "You: " + userMessage + "\n"
         self.outputBox.configure(state="normal")
         self.outputBox.insert(tk.END, storedUserMessage) 
-        self.outputBox.insert(tk.END, reply) 
+        self.outputBox.insert(tk.END, reply)
         self.outputBox.configure(state="disabled")
 
 
