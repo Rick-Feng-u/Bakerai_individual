@@ -55,6 +55,7 @@ class bakerClient(tk.Tk):
     def getResponse(self):
         # Get user message
         userMessage = self.userInput.get()
+        userin = userMessage
         # language detection 
         user_lang = languageDeteaction(userMessage)
         if(user_lang != 'en'):
@@ -73,7 +74,7 @@ class bakerClient(tk.Tk):
         else:
             reply = "BakerAI: " + raw_reply + "\n"
         # Send reply to client
-        storedUserMessage = "You: " + userMessage + "\n"
+        storedUserMessage = "You: " + userin + "\n"
         self.outputBox.configure(state="normal")
         self.outputBox.insert(tk.END, storedUserMessage) 
         self.outputBox.insert(tk.END, reply)
