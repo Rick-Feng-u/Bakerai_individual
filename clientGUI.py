@@ -65,7 +65,7 @@ class bakerClient(tk.Tk):
         # Get our reply
         raw_reply = m.getFinalOutput(self.loaded_clf,userMessage)
         reply = ""
-        if():
+        if(user_lang != 'en'):
             translated = translateTo(raw_reply, user_lang)
             reply = "BakerAI: " + translated + "\n"
         else:
